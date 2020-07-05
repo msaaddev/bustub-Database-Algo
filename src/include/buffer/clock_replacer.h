@@ -46,6 +46,11 @@ class ClockReplacer : public Replacer {
   size_t Size() override;
 
  private:
+  size_t *frames;
+  bool *replacerFrame;
+  size_t replacerSize = 0;
+  size_t arrSize;
+  size_t clockReplacerSize = 0;
   // TODO(student): implement me!
 };
 
